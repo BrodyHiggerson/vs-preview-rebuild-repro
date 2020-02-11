@@ -1,0 +1,8 @@
+project(lib2)
+
+add_library(${PROJECT_NAME} STATIC
+	lib2.h
+	lib2.cpp
+)
+
+TARGET_INCLUDE_DIRECTORIES(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
